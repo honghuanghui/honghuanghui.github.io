@@ -323,19 +323,12 @@
 
       
         
-          
-            <h1 id="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）"><a href="#使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）" class="headerlink" title="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）"></a>使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）</h1><p>##逻辑图</p>
-<p>##原理详解</p>
-<ol>
-<li>微信客户端发送控制指令对下位机进行控制：<br>首先，在手机或者电脑中的微信客户端发送预设的控制指令，例如预设有灯泡开或者关（其实就是数字量的信号）。然后微信客户端将此控制指令发送到后端服务器（也就是我们搭建的树莓派），服务器在收到指令信号后，就会去更改数据库相应的控制值。与此同时，下位机会间断地向服务器发送请求，每一次请求之后，服务器就会将数据库中的状态位发送给下位机，下位机收到这些数据后，做出相应的动作。</li>
-</ol>
-<ol>
-<li>微信客户端发送查询请求：<br>首先假设一个我们需要知道我们家里的温度情况，那么我们 在客户端中发送预设指令—温度。客户端会将此查询指令发送到后端服务器，服务器接收指令后，连接数据库，查询到相应的数值，最后返回给微信客户端。这时候你可能会问，数据库的这些数据是怎么来的呢？其实就是上面所说的，下位机会不间断地向服务器发送请求指令，这些请求指令里面就包含温度传感器所测量出来的温度。服务器在收到请求指令后，不但会回复下位机，而且会把这些温度存放到数据库里面。这样，就完成了微信的查询指令。</li>
-</ol>
-<p>如果你明白了上面两段话，那么这时你应该会突然觉得，数据库就是一个中间媒介！没错，远程客户端控制下位机，其实就是客户端或者下位机在不断地修改数据库，或者查询数据库，以此获得自己想要的数据。（这里还需要说明一点，如果你所用到的数据不那么复杂，或者说你不想用数据库，这也是可以的。但是这对于复杂的情况下，其数据的处理会变得复杂得多，而且数据的安全性和有效性也会大打折扣。）</p>
-<p>有了前面的准备工作，那你就有个一盏指路明灯了！接下来就是落实到细节方面了，你可以想象成一个个的模块。把每个模块做好，然后组起来！</p>
-
-          
+          <h1 id="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）"><a href="#使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）" class="headerlink" title="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）"></a>使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）</h1><h2 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h2><p>此博文为远程控制的原理说明篇。在看它的实践篇之前，应该要明白以下原理再动手做，这样将做到事半功倍的效果。此文用了比较通俗的语言去诠释其原理，若在看此文时有不懂的地方要及时找出答案。</p>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/09/08/使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -735,136 +728,6 @@
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2015/12/12/MWeb - 专业的 Markdown 写作、记笔记、静态博客生成软件/" itemprop="url">
-                  未命名
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2015-12-12T06:02:44+08:00" content="2015-12-12">
-              2015-12-12
-            </time>
-          </span>
-
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2015/12/12/MWeb - 专业的 Markdown 写作、记笔记、静态博客生成软件/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/12/12/MWeb - 专业的 Markdown 写作、记笔记、静态博客生成软件/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="MWeb-专业的-Markdown-写作、记笔记、静态博客生成软件"><a href="#MWeb-专业的-Markdown-写作、记笔记、静态博客生成软件" class="headerlink" title="MWeb - 专业的 Markdown 写作、记笔记、静态博客生成软件"></a>MWeb - 专业的 Markdown 写作、记笔记、静态博客生成软件</h1><h2 id="专业的-Markdown-写作支持"><a href="#专业的-Markdown-写作支持" class="headerlink" title="专业的 Markdown 写作支持"></a>专业的 Markdown 写作支持</h2><ul>
-<li>极简 UI、Dark Mode、漂亮的 Markdown 语法高亮、列表缩进优化，提供 5 种主题选择。</li>
-<li>除了支持基本的 Markdown 语法外，还支持大量 Markdown 扩展语法：Table、TOC、MathJax、Fenced code block、任务列表（Task lists）、顺序图和流程图、Footnote 等。</li>
-<li>支持 Typewriter Scrolling（打机滚动模式）<code>View</code> - <code>Typewriter Scrolling</code>。</li>
-<li>支持发布和<strong>更新</strong>到：Wordrpess 博客、支持 Metaweblog API 的博客服务、Wordpress.com、Evernote 和印象笔记、Blogger、Tumblr。请在 <code>Preferences</code> - <code>Publishing</code> 增加发布服务，然后点击软件右上角的分享按钮即可看到所增加的发布服务。</li>
-<li>支持即时预览并提供 6 种预览主题，其中二种和静态博客主题相对应，也就是说您在写博客时可以即时预览大概效果！所有主题效果都支持导出为 HTML、PDF。快捷键 <code>CMD + R</code> 或 <code>CMD + 4</code> 打开即时预览窗口。</li>
-<li>编辑器和实时预览都支持大纲视图，长文档时跳转非常方便。</li>
-</ul>
-<h2 id="设计为两种模式"><a href="#设计为两种模式" class="headerlink" title="设计为两种模式"></a>设计为两种模式</h2><ul>
-<li>外部文档模式：用于新建、打开和编辑外部 Markdown 文档。也支持引入外部文件夹到 MWeb 中管理。</li>
-<li>文档库模式：用分类树管理文档，可以把文档设为多个分类，用于记笔记和静态网站生成。</li>
-</ul>
-<p><code>CMD + E</code> 或使用菜单 <code>View</code> - <code>Open External</code> 可打开外部文档模式。</p>
-<p><code>CMD + L</code> 或使用菜单 <code>View</code> - <code>Open Library</code> 可打开文档库。</p>
-<p>文档库模式和外部模式都支持<strong>全文搜寻（Full Text Search）</strong>，都可以用拖放或粘贴插入图片并直接显示。<code>CMD + V</code> 粘贴为JPG格式，<code>CMD + Shift + V</code> 粘贴为PNG透明格式。</p>
-<p>外部模式引入 Octpress、Jekyll 等静态博客的文件夹后也支持拖放或粘贴插入图片和实时预览，详细请参考：<a href="http://zh.mweb.im/mweb-1.4-add-floder-octpress-support.html" target="_blank" rel="external">引入文件夹到 MWeb 中管理，支持 Octpress、Jekyll 等静态博客拖拽插入图片和实时预览</a></p>
-<h2 id="文档库模式用于记笔记"><a href="#文档库模式用于记笔记" class="headerlink" title="文档库模式用于记笔记"></a>文档库模式用于记笔记</h2><p>文档库模式使用分类树组织和管理文档，支持拖放或粘贴插入图片并直接显示，插入非图片则会生成连结。<br>支持把 Markdown 或文本文档导入到文档库，也支持把整个分类或者文档（可选多个）导出为 HTML、PDF、Markdown。</p>
-<p>更详细的信息请看：<a href="http://zh.mweb.im/mweb-document-library.html" target="_blank" rel="external">MWeb 文档库模式详细说明</a></p>
-<h2 id="文档库模式用于静态博客生成"><a href="#文档库模式用于静态博客生成" class="headerlink" title="文档库模式用于静态博客生成"></a>文档库模式用于静态博客生成</h2><p>一键把分类生成静态博客，目前可选二个主题，支持自定主题。只要填入 Disqus、多说提供的代码即可以为博客增加评论功能。可勾选让网站支持 MathJax 和顺序图、流程图。</p>
-<p>更详细的信息请看：<a href="http://zh.mweb.im/mweb-static-blog-generator.html" target="_blank" rel="external">MWeb 生成静态博客详细说明</a>、<a href="http://zh.mweb.im/mweb-1.4-static-blog-extension.html" target="_blank" rel="external">静态博客功能增强</a></p>
-<h1 id="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）"><a href="#使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）" class="headerlink" title="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）"></a>使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）</h1><p>##逻辑图</p>
-<p>##原理详解</p>
-<ol>
-<li>微信客户端发送控制指令对下位机进行控制：<br>首先，在手机或者电脑中的微信客户端发送预设的控制指令，例如预设有灯泡开或者关（其实就是数字量的信号）。然后微信客户端将此控制指令发送到后端服务器（也就是我们搭建的树莓派），服务器在收到指令信号后，就会去更改数据库相应的控制值。与此同时，下位机会间断地向服务器发送请求，每一次请求之后，服务器就会将数据库中的状态位发送给下位机，下位机收到这些数据后，做出相应的动作。</li>
-</ol>
-<h2 id="专业的-Markdown-写作支持-1"><a href="#专业的-Markdown-写作支持-1" class="headerlink" title="专业的 Markdown 写作支持"></a>专业的 Markdown 写作支持</h2><ol>
-<li>微信客户端发送查询请求：<br>首先假设一个我们需要知道我们家里的温度情况，那么我们 在客户端中发送预设指令—温度。客户端会将此查询指令发送到后端服务器，服务器接收指令后，连接数据库，查询到相应的数值，最后返回给微信客户端。这时候你可能会问，数据库的这些数据是怎么来的呢？其实就是上面所说的，下位机会不间断地向服务器发送请求指令，这些请求指令里面就包含温度传感器所测量出来的温度。服务器在收到请求指令后，不但会回复下位机，而且会把这些温度存放到数据库里面。这样，就完成了微信的查询指令。</li>
-</ol>
-<p>如果你明白了上面两段话，那么这时你应该会突然觉得，数据库就是一个中间媒介！没错，远程客户端控制下位机，其实就是客户端或者下位机在不断地修改数据库，或者查询数据库，以此获得自己想要的数据。（这里还需要说明一点，如果你所用到的数据不那么复杂，或者说你不想用数据库，这也是可以的。但是这对于复杂的情况下，其数据的处理会变得复杂得多，而且数据的安全性和有效性也会大打折扣。）</p>
-<p>有了前面的准备工作，那你就有个一盏指路明灯了！接下来就是落实到细节方面了，你可以想象成一个个的模块。把每个模块做好，然后组起来！</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -906,7 +769,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">5</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
