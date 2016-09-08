@@ -86,27 +86,29 @@
 
 
 
-<meta name="description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）导言
-这篇实践篇的教程是以上一篇原理篇的教程为依据，从客户端到服务器端，再到下位机这三个大方面进行实际操作的讲解。帮助读者在阅读完本教程之后，能够亲自搭建出属于自己的物联网平台。当然在此之前，你应该具备一些基本的知识储备，如有遇到不懂的地方，欢迎大家互相交流，共同进步。">
+<meta name="description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）导言这篇实践篇的教程是以上一篇原理篇的教程为依据，从客户端到服务器端，再到下位机这三个大方面进行实际操作的讲解。帮助读者在阅读完本教程之后，能够亲自搭建出属于自己的物联网平台。当然在此之前，你应该具备一些基本的知识储备，如有遇到不懂的地方，欢迎大家互相交流，共同进步。==欢迎转载，但恳请保留原作者信息。=">
 <meta property="og:type" content="article">
 <meta property="og:title" content="web">
 <meta property="og:url" content="http://yoursite.com/2016/09/07/arduino_lesson/index.html">
 <meta property="og:site_name" content="顽石的家">
-<meta property="og:description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）导言
-这篇实践篇的教程是以上一篇原理篇的教程为依据，从客户端到服务器端，再到下位机这三个大方面进行实际操作的讲解。帮助读者在阅读完本教程之后，能够亲自搭建出属于自己的物联网平台。当然在此之前，你应该具备一些基本的知识储备，如有遇到不懂的地方，欢迎大家互相交流，共同进步。">
+<meta property="og:description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）导言这篇实践篇的教程是以上一篇原理篇的教程为依据，从客户端到服务器端，再到下位机这三个大方面进行实际操作的讲解。帮助读者在阅读完本教程之后，能够亲自搭建出属于自己的物联网平台。当然在此之前，你应该具备一些基本的知识储备，如有遇到不懂的地方，欢迎大家互相交流，共同进步。==欢迎转载，但恳请保留原作者信息。=">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/%E6%88%AA%E5%9B%BE%202016-08-30%2016%E6%97%B628%E5%88%8604%E7%A7%92.jpg">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/%E6%88%AA%E5%9B%BE%202016-08-30%2016%E6%97%B631%E5%88%8659%E7%A7%92.jpg">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/shumeipa.jpg">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14725464117935.jpg">
+<meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14732374837891.jpg">
+<meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14732374146829.jpg">
+<meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14732374582354.jpg">
+<meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14732378614470.jpg">
+<meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/IMG_1384.jpg">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14732368100241.jpg">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14732369589011.jpg">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/%E6%88%AA%E5%9B%BE%202016-09-07%2015%E6%97%B639%E5%88%8653%E7%A7%92.jpg">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/%E6%88%AA%E5%9B%BE%202016-09-07%2015%E6%97%B641%E5%88%8646%E7%A7%92.jpg">
-<meta property="og:updated_time" content="2016-09-07T18:44:17.000Z">
+<meta property="og:updated_time" content="2016-09-08T01:46:47.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="web">
-<meta name="twitter:description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）导言
-这篇实践篇的教程是以上一篇原理篇的教程为依据，从客户端到服务器端，再到下位机这三个大方面进行实际操作的讲解。帮助读者在阅读完本教程之后，能够亲自搭建出属于自己的物联网平台。当然在此之前，你应该具备一些基本的知识储备，如有遇到不懂的地方，欢迎大家互相交流，共同进步。">
+<meta name="twitter:description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）导言这篇实践篇的教程是以上一篇原理篇的教程为依据，从客户端到服务器端，再到下位机这三个大方面进行实际操作的讲解。帮助读者在阅读完本教程之后，能够亲自搭建出属于自己的物联网平台。当然在此之前，你应该具备一些基本的知识储备，如有遇到不懂的地方，欢迎大家互相交流，共同进步。==欢迎转载，但恳请保留原作者信息。=">
 <meta name="twitter:image" content="http://od5ckzkb4.bkt.clouddn.com/%E6%88%AA%E5%9B%BE%202016-08-30%2016%E6%97%B628%E5%88%8604%E7%A7%92.jpg">
 
 
@@ -361,10 +363,7 @@
       
 
       
-        <h1 id="shi-yong-shu-mei-pai-arduino-he-esp8266-tong-guo-wei-xin-ke-hu-duan-shi-xian-wu-lian-wang-de-wan-zheng-jiao-cheng-shi-jian-pian-han-yuan-ma"><a href="#&#x4F7F;&#x7528;&#x6811;&#x8393;&#x6D3E;&#x3001;arduino&#x548C;esp8266&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x7269;&#x8054;&#x7F51;&#x7684;&#x5B8C;&#x6574;&#x6559;&#x7A0B;&#xFF08;&#x5B9E;&#x8DF5;&#x7BC7;&#x3001;&#x542B;&#x6E90;&#x7801;&#xFF09;" class="headerlink" title="&#x4F7F;&#x7528;&#x6811;&#x8393;&#x6D3E;&#x3001;arduino&#x548C;esp8266&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x7269;&#x8054;&#x7F51;&#x7684;&#x5B8C;&#x6574;&#x6559;&#x7A0B;&#xFF08;&#x5B9E;&#x8DF5;&#x7BC7;&#x3001;&#x542B;&#x6E90;&#x7801;&#xFF09;"></a>&#x4F7F;&#x7528;&#x6811;&#x8393;&#x6D3E;&#x3001;arduino&#x548C;esp8266&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x7269;&#x8054;&#x7F51;&#x7684;&#x5B8C;&#x6574;&#x6559;&#x7A0B;&#xFF08;&#x5B9E;&#x8DF5;&#x7BC7;&#x3001;&#x542B;&#x6E90;&#x7801;&#xFF09;</h1><h2 id="dao-yan"><a href="#&#x5BFC;&#x8A00;" class="headerlink" title="&#x5BFC;&#x8A00;"></a>&#x5BFC;&#x8A00;</h2><blockquote>
-<p>&#x8FD9;&#x7BC7;&#x5B9E;&#x8DF5;&#x7BC7;&#x7684;&#x6559;&#x7A0B;&#x662F;&#x4EE5;&#x4E0A;&#x4E00;&#x7BC7;&#x539F;&#x7406;&#x7BC7;&#x7684;&#x6559;&#x7A0B;&#x4E3A;&#x4F9D;&#x636E;&#xFF0C;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x518D;&#x5230;&#x4E0B;&#x4F4D;&#x673A;&#x8FD9;&#x4E09;&#x4E2A;&#x5927;&#x65B9;&#x9762;&#x8FDB;&#x884C;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#x7684;&#x8BB2;&#x89E3;&#x3002;&#x5E2E;&#x52A9;&#x8BFB;&#x8005;&#x5728;&#x9605;&#x8BFB;&#x5B8C;&#x672C;&#x6559;&#x7A0B;&#x4E4B;&#x540E;&#xFF0C;&#x80FD;&#x591F;&#x4EB2;&#x81EA;&#x642D;&#x5EFA;&#x51FA;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x7269;&#x8054;&#x7F51;&#x5E73;&#x53F0;&#x3002;&#x5F53;&#x7136;&#x5728;&#x6B64;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x5177;&#x5907;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x77E5;&#x8BC6;&#x50A8;&#x5907;&#xFF0C;&#x5982;&#x6709;&#x9047;&#x5230;&#x4E0D;&#x61C2;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6B22;&#x8FCE;&#x5927;&#x5BB6;&#x4E92;&#x76F8;&#x4EA4;&#x6D41;&#xFF0C;&#x5171;&#x540C;&#x8FDB;&#x6B65;&#x3002;</p>
-</blockquote>
-<a id="more"></a>
+        <h1 id="shi-yong-shu-mei-pai-arduino-he-esp8266-tong-guo-wei-xin-ke-hu-duan-shi-xian-wu-lian-wang-de-wan-zheng-jiao-cheng-shi-jian-pian-han-yuan-ma"><a href="#&#x4F7F;&#x7528;&#x6811;&#x8393;&#x6D3E;&#x3001;arduino&#x548C;esp8266&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x7269;&#x8054;&#x7F51;&#x7684;&#x5B8C;&#x6574;&#x6559;&#x7A0B;&#xFF08;&#x5B9E;&#x8DF5;&#x7BC7;&#x3001;&#x542B;&#x6E90;&#x7801;&#xFF09;" class="headerlink" title="&#x4F7F;&#x7528;&#x6811;&#x8393;&#x6D3E;&#x3001;arduino&#x548C;esp8266&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x7269;&#x8054;&#x7F51;&#x7684;&#x5B8C;&#x6574;&#x6559;&#x7A0B;&#xFF08;&#x5B9E;&#x8DF5;&#x7BC7;&#x3001;&#x542B;&#x6E90;&#x7801;&#xFF09;"></a>&#x4F7F;&#x7528;&#x6811;&#x8393;&#x6D3E;&#x3001;arduino&#x548C;esp8266&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x5BA2;&#x6237;&#x7AEF;&#x5B9E;&#x73B0;&#x7269;&#x8054;&#x7F51;&#x7684;&#x5B8C;&#x6574;&#x6559;&#x7A0B;&#xFF08;&#x5B9E;&#x8DF5;&#x7BC7;&#x3001;&#x542B;&#x6E90;&#x7801;&#xFF09;</h1><h2 id="dao-yan"><a href="#&#x5BFC;&#x8A00;" class="headerlink" title="&#x5BFC;&#x8A00;"></a>&#x5BFC;&#x8A00;</h2><p>&#x8FD9;&#x7BC7;&#x5B9E;&#x8DF5;&#x7BC7;&#x7684;&#x6559;&#x7A0B;&#x662F;&#x4EE5;&#x4E0A;&#x4E00;&#x7BC7;&#x539F;&#x7406;&#x7BC7;&#x7684;&#x6559;&#x7A0B;&#x4E3A;&#x4F9D;&#x636E;&#xFF0C;&#x4ECE;&#x5BA2;&#x6237;&#x7AEF;&#x5230;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#xFF0C;&#x518D;&#x5230;&#x4E0B;&#x4F4D;&#x673A;&#x8FD9;&#x4E09;&#x4E2A;&#x5927;&#x65B9;&#x9762;&#x8FDB;&#x884C;&#x5B9E;&#x9645;&#x64CD;&#x4F5C;&#x7684;&#x8BB2;&#x89E3;&#x3002;&#x5E2E;&#x52A9;&#x8BFB;&#x8005;&#x5728;&#x9605;&#x8BFB;&#x5B8C;&#x672C;&#x6559;&#x7A0B;&#x4E4B;&#x540E;&#xFF0C;&#x80FD;&#x591F;&#x4EB2;&#x81EA;&#x642D;&#x5EFA;&#x51FA;&#x5C5E;&#x4E8E;&#x81EA;&#x5DF1;&#x7684;&#x7269;&#x8054;&#x7F51;&#x5E73;&#x53F0;&#x3002;&#x5F53;&#x7136;&#x5728;&#x6B64;&#x4E4B;&#x524D;&#xFF0C;&#x4F60;&#x5E94;&#x8BE5;&#x5177;&#x5907;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x7684;&#x77E5;&#x8BC6;&#x50A8;&#x5907;&#xFF0C;&#x5982;&#x6709;&#x9047;&#x5230;&#x4E0D;&#x61C2;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x6B22;&#x8FCE;&#x5927;&#x5BB6;&#x4E92;&#x76F8;&#x4EA4;&#x6D41;&#xFF0C;&#x5171;&#x540C;&#x8FDB;&#x6B65;&#x3002;<br><strong><em><em>==&#x6B22;&#x8FCE;&#x8F6C;&#x8F7D;&#xFF0C;&#x4F46;&#x6073;&#x8BF7;&#x4FDD;&#x7559;&#x539F;&#x4F5C;&#x8005;&#x4FE1;&#x606F;&#x3002;==</em></em></strong><br><a id="more"></a></p>
 <p>[TOC]</p>
 <h2 id="zhu-yao-qi-cai"><a href="#&#x4E3B;&#x8981;&#x5668;&#x6750;&#xFF1A;" class="headerlink" title="&#x4E3B;&#x8981;&#x5668;&#x6750;&#xFF1A;"></a>&#x4E3B;&#x8981;&#x5668;&#x6750;&#xFF1A;</h2><p>&#x6811;&#x8393;&#x6D3E;&#x3001;arduino&#x3001;esp8266&#x3001;TTL&#x8F6C;&#x4E32;&#x53E3;&#x7EBF;&#x3001;&#x9762;&#x5305;&#x677F;&#xFF08;&#x9009;&#x7528;&#xFF09;&#x3001;&#x624B;&#x673A;&#x3001;&#x7535;&#x8111;&#x3001;&#x7EA2;&#x5916;&#x53D1;&#x5C04;&#x4E8C;&#x6781;&#x7BA1;&#x3001;&#x7EA2;&#x5916;&#x63A5;&#x6536;&#x4E8C;&#x6781;&#x7BA1;&#x3001;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x3002;</p>
 <h2 id="shu-mei-pai-da-jian-fu-wu-qi"><a href="#&#x6811;&#x8393;&#x6D3E;&#x642D;&#x5EFA;&#x670D;&#x52A1;&#x5668;&#xFF1A;" class="headerlink" title="&#x6811;&#x8393;&#x6D3E;&#x642D;&#x5EFA;&#x670D;&#x52A1;&#x5668;&#xFF1A;"></a>&#x6811;&#x8393;&#x6D3E;&#x642D;&#x5EFA;&#x670D;&#x52A1;&#x5668;&#xFF1A;</h2><h3 id="yi-ji-chu-gong-zuo"><a href="#&#x4E00;&#x3001;&#x57FA;&#x7840;&#x5DE5;&#x4F5C;" class="headerlink" title="&#x4E00;&#x3001;&#x57FA;&#x7840;&#x5DE5;&#x4F5C;"></a>&#x4E00;&#x3001;&#x57FA;&#x7840;&#x5DE5;&#x4F5C;</h3><h4 id="1-shu-mei-pai-ji-ben-she-zhi"><a href="#1-&#x6811;&#x8393;&#x6D3E;&#x57FA;&#x672C;&#x8BBE;&#x7F6E;" class="headerlink" title="1.&#x6811;&#x8393;&#x6D3E;&#x57FA;&#x672C;&#x8BBE;&#x7F6E;"></a>1.&#x6811;&#x8393;&#x6D3E;&#x57FA;&#x672C;&#x8BBE;&#x7F6E;</h4><p>1.&#x5B89;&#x88C5;&#x6811;&#x8393;&#x6D3E;&#x7684;linux&#x53D1;&#x884C;&#x7248;&#x7CFB;&#x7EDF;&#xFF0C;&#x5F53;&#x7136;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5176;&#x4ED6;&#x9002;&#x5408;&#x6811;&#x8393;&#x6D3E;&#x7684;&#x7CFB;&#x7EDF;&#x3002;<br>&#x5982;&#x56FE;&#xFF1A;<br><img src="http://od5ckzkb4.bkt.clouddn.com/%E6%88%AA%E5%9B%BE%202016-08-30%2016%E6%97%B628%E5%88%8604%E7%A7%92.jpg" alt=""></p>
@@ -383,19 +382,366 @@
 <p><code>sudo apt-get install php5</code><br><code>sudo apt-get install php5-mysql</code></p>
 <h4 id="4-ce-shi"><a href="#4-&#x6D4B;&#x8BD5;" class="headerlink" title="4.&#x6D4B;&#x8BD5;"></a>4.&#x6D4B;&#x8BD5;</h4><p>&#x5B89;&#x88C5;&#x5B8C;&#x6210;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x8F93;&#x5165;&#x4F60;&#x8DEF;&#x7531;&#x5668;&#x7684; IP &#x6216;&#x57DF;&#x540D;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4F60;&#x7684;&#x7F51;&#x7AD9;&#x4E86;&#x3002;&#x4F60;&#x5E94;&#x8BE5;&#x80FD;&#x770B;&#x5230;&#x4E00;&#x4E2A;&#x9875;&#x9762;&#x663E;&#x793A;&#x201C;It works&#x201D;&#xFF0C;&#x4F46;&#x662F;&#x6CA1;&#x6709;&#x5176;&#x5B83;&#x5185;&#x5BB9;&#x3002;</p>
 <h3 id="san-dai-ma-bu-shu"><a href="#&#x4E09;&#x3001;&#x4EE3;&#x7801;&#x90E8;&#x7F72;" class="headerlink" title="&#x4E09;&#x3001;&#x4EE3;&#x7801;&#x90E8;&#x7F72;"></a>&#x4E09;&#x3001;&#x4EE3;&#x7801;&#x90E8;&#x7F72;</h3><p>&#x7136;&#x540E;&#x5C06;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5728;<code>/var/www/index.php</code>&#x4E2D;&#xFF0C;&#x81F3;&#x6B64;&#x4F60;&#x5B8C;&#x6210;&#x4E86;&#x670D;&#x52A1;&#x5668;&#x7AEF;&#x7684;&#x90E8;&#x7F72;&#xFF01;</p>
-<h3 id="si-dai-ma-shi-li"><a href="#&#x56DB;&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;" class="headerlink" title="&#x56DB;&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"></a>&#x56DB;&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div><div class="line">128</div><div class="line">129</div><div class="line">130</div><div class="line">131</div><div class="line">132</div><div class="line">133</div><div class="line">134</div><div class="line">135</div><div class="line">136</div><div class="line">137</div><div class="line">138</div><div class="line">139</div><div class="line">140</div><div class="line">141</div><div class="line">142</div><div class="line">143</div><div class="line">144</div><div class="line">145</div><div class="line">146</div><div class="line">147</div><div class="line">148</div><div class="line">149</div><div class="line">150</div><div class="line">151</div><div class="line">152</div><div class="line">153</div><div class="line">154</div><div class="line">155</div><div class="line">156</div><div class="line">157</div><div class="line">158</div><div class="line">159</div><div class="line">160</div><div class="line">161</div><div class="line">162</div><div class="line">163</div><div class="line">164</div><div class="line">165</div><div class="line">166</div><div class="line">167</div><div class="line">168</div><div class="line">169</div><div class="line">170</div><div class="line">171</div><div class="line">172</div><div class="line">173</div><div class="line">174</div><div class="line">175</div><div class="line">176</div><div class="line">177</div><div class="line">178</div><div class="line">179</div><div class="line">180</div><div class="line">181</div><div class="line">182</div><div class="line">183</div><div class="line">184</div><div class="line">185</div><div class="line">186</div><div class="line">187</div><div class="line">188</div><div class="line">189</div><div class="line">190</div><div class="line">191</div><div class="line">192</div><div class="line">193</div><div class="line">194</div><div class="line">195</div><div class="line">196</div><div class="line">197</div><div class="line">198</div><div class="line">199</div><div class="line">200</div><div class="line">201</div><div class="line">202</div><div class="line">203</div><div class="line">204</div><div class="line">205</div><div class="line">206</div><div class="line">207</div><div class="line">208</div><div class="line">209</div><div class="line">210</div><div class="line">211</div><div class="line">212</div><div class="line">213</div><div class="line">214</div><div class="line">215</div><div class="line">216</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">//define your token</div><div class="line">define(&quot;TOKEN&quot;, &quot;weixin&quot;); //&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x4E2D;&#x7684;&#x9A8C;&#x8BC1;&#x7801;</div><div class="line">$wechatObj = new wechatCallbackapiTest();</div><div class="line">if($_GET[&quot;echostr&quot;]){</div><div class="line">    $wechatObj-&gt;valid();</div><div class="line">}else{</div><div class="line">    $wechatObj-&gt;responseMsg();</div><div class="line">}</div><div class="line"></div><div class="line">class wechatCallbackapiTest</div><div class="line">{</div><div class="line">    public function valid()</div><div class="line">    {</div><div class="line">        $echoStr = $_GET[&quot;echostr&quot;];</div><div class="line"></div><div class="line">        //valid signature , option</div><div class="line">        if($this-&gt;checkSignature()){</div><div class="line">            echo $echoStr;</div><div class="line">            exit;</div><div class="line">        }</div><div class="line">    }</div><div class="line"></div><div class="line">    /**</div><div class="line">     *</div><div class="line">     */</div><div class="line">    public function responseMsg()</div><div class="line">    {</div><div class="line">        //get post data, May be due to the different environments</div><div class="line">        $postStr = $GLOBALS[&quot;HTTP_RAW_POST_DATA&quot;];</div><div class="line"></div><div class="line">        //extract post data</div><div class="line">        if (!empty($postStr)) {</div><div class="line">            /* libxml_disable_entity_loader is to prevent XML eXternal Entity Injection,</div><div class="line">               the best way is to check the validity of xml by yourself */</div><div class="line">            libxml_disable_entity_loader(true);</div><div class="line">            $postObj = simplexml_load_string($postStr, &apos;SimpleXMLElement&apos;, LIBXML_NOCDATA);</div><div class="line">            $fromUsername = $postObj-&gt;FromUserName;</div><div class="line">            $toUsername = $postObj-&gt;ToUserName;</div><div class="line">            $msgType = $postObj-&gt;MsgType;</div><div class="line">            $keyword = trim($postObj-&gt;Content);</div><div class="line">            $Event = $postObj-&gt;Event;</div><div class="line">            $time = time();</div><div class="line">            $textTpl = &quot;&lt;xml&gt;</div><div class="line">							&lt;ToUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/ToUserName&gt;</div><div class="line">							&lt;FromUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/FromUserName&gt;</div><div class="line">							&lt;CreateTime&gt;%s&lt;/CreateTime&gt;</div><div class="line">							&lt;MsgType&gt;&lt;![CDATA[%s]]&gt;&lt;/MsgType&gt;</div><div class="line">							&lt;Content&gt;&lt;![CDATA[%s]]&gt;&lt;/Content&gt;</div><div class="line">							&lt;FuncFlag&gt;0&lt;/FuncFlag&gt;</div><div class="line">							&lt;/xml&gt;&quot;;</div><div class="line">							//&#x5173;&#x6CE8;&#x516C;&#x4F17;&#x53F7;&#x540E;&#xFF0C;&#x5F15;&#x53D1;&#x6B64;&#x4E8B;&#x4EF6;</div><div class="line">            if ($Event == &quot;subscribe&quot;) {</div><div class="line">                $msgType = &quot;text&quot;;</div><div class="line">                $retMsg = &quot;&#x6B22;&#x8FCE;&#x6765;&#x5230;&#x667A;&#x6167;&#x5BB6;&#x5C45;&#xFF01;&quot;;</div><div class="line">                // $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);</div><div class="line">                // echo $resultStr;</div><div class="line">            }</div><div class="line">            if ($msgType == &apos;voice&apos;) {//&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x8BED;&#x97F3;</div><div class="line">                $content = $postObj-&gt;Recognition;</div><div class="line">            } elseif ($msgType == &apos;text&apos;) {</div><div class="line">                $content = $postObj-&gt;Content;</div><div class="line">            } else {</div><div class="line">                $retMsg = &apos;&#x53EA;&#x652F;&#x6301;&#x6587;&#x672C;&#x548C;&#x8BED;&#x97F3;&#x6D88;&#x606F;&apos;;</div><div class="line">            }</div><div class="line">            if (strstr($content, &quot;&#x6E29;&#x5EA6;&quot;)) {</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                mysqli_select_db($conn,&quot;smart home&quot;);//&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;</div><div class="line">                $result = mysqli_query($conn,&quot;SELECT * FROM `smart home`.sensor_temp WHERE ID =&apos;1&apos;&quot;);</div><div class="line">                while($arr = mysqli_fetch_array($result)){//&#x627E;&#x5230;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x5E76;&#x8BFB;&#x51FA;&#x72B6;&#x6001;&#x503C;</div><div class="line">                    if ($arr[&apos;ID&apos;] == 1) {</div><div class="line">                        $tm = $arr[&apos;timestamp&apos;];</div><div class="line">                        $temp=$arr[&apos;temp&apos;];</div><div class="line">                    }</div><div class="line">                }</div><div class="line">                mysqli_close($conn);</div><div class="line">                $retMsg=&quot;&#x4E3B;&#x4EBA;&#x60A8;&#x597D;,&#x73B0;&#x5728;&#x662F;&#x5317;&#x4EAC;&#x65F6;&#x95F4;:&quot;.$tm.&quot; &quot;.&quot;\n&quot;.&quot;&#x73B0;&#x5728;&#x7684;&#x5BA4;&#x6E29;&#x4E3A;&quot;.$temp.&quot;&#x2103;&#xFF0C;&#x8FD8;&#x6709;&#x4EC0;&#x4E48;&#x5429;&#x5490;&#x5462;?&quot;;</div><div class="line">                //$msgType=&quot;text&quot;;</div><div class="line">            }elseif (!empty($content)){</div><div class="line">                $msgType=&quot;text&quot;;</div><div class="line">                $retMsg=&quot;&#x60A8;&#x53EF;&#x4EE5;&#x53D1;&#x9001; (&#x6E29;&#x5EA6;) &#x6765;&#x83B7;&#x53D6;&#x60A8;&#x5BB6;&#x91CC;&#x7684;&#x6E29;&#x5EA6;&#x3002;&quot;;</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;&#x5F00;&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,1);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;&#x97F3;&#x91CF;+&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,2);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;&#x97F3;&#x91CF;-&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,3);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;+&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg= $this-&gt;TV_control($conn,4);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;-&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,5);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;1&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,6);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;2&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,7);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;3&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,8);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;4&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,9);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;5&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,10);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;6&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,&#x53BB;);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;7&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,12);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;8&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,13);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;9&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,14);</div><div class="line">            }</div><div class="line">            if (strstr($content,&quot;0&quot;)){</div><div class="line">                $conn=$this-&gt;connection_mysql();</div><div class="line">                $retMsg=$this-&gt;TV_control($conn,15);</div><div class="line">            }</div><div class="line">            $msgType=&quot;text&quot;;</div><div class="line">            $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $retMsg);</div><div class="line">            echo $resultStr;</div><div class="line">        }</div><div class="line">    }</div><div class="line">    private function checkSignature()</div><div class="line">    {</div><div class="line">        // you must define TOKEN by yourself</div><div class="line">        if (!defined(&quot;TOKEN&quot;)) {</div><div class="line">            throw new Exception(&apos;TOKEN is not defined!&apos;);</div><div class="line">        }</div><div class="line">        $signature = $_GET[&quot;signature&quot;];</div><div class="line">        $timestamp = $_GET[&quot;timestamp&quot;];</div><div class="line">        $nonce = $_GET[&quot;nonce&quot;];</div><div class="line">        $token = TOKEN;</div><div class="line">        $tmpArr = array($token, $timestamp, $nonce);</div><div class="line">        // use SORT_STRING rule</div><div class="line">        sort($tmpArr, SORT_STRING);</div><div class="line">        $tmpStr = implode( $tmpArr );</div><div class="line">        $tmpStr = sha1( $tmpStr );</div><div class="line">        if( $tmpStr == $signature ){</div><div class="line">            return true;</div><div class="line">        }else{</div><div class="line">            return false;</div><div class="line">        }</div><div class="line">    }</div><div class="line">    private function connection_mysql()</div><div class="line">    {</div><div class="line">        $dbhost = &apos;localhost:3306&apos;;  //mysql&#x670D;&#x52A1;&#x5668;&#x4E3B;&#x673A;&#x5730;&#x5740;</div><div class="line">        $dbuser = &apos;root&apos;;      //mysql&#x7528;&#x6237;&#x540D;</div><div class="line">        $dbpass = &apos;591039996&apos;;//mysql&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;</div><div class="line">        $con = mysqli_connect($dbhost, $dbuser, $dbpass);</div><div class="line">        if(! $con )</div><div class="line">        {</div><div class="line">            die(&apos;Could not connect: &apos; . mysqli_error());</div><div class="line">        }</div><div class="line">        echo &apos;Connected successfully&apos;;</div><div class="line">        return $con;</div><div class="line">    }</div><div class="line">    private function TV_control($conn,$value)</div><div class="line">    {</div><div class="line">        mysqli_select_db($conn,&quot;smart home&quot;);</div><div class="line">        $sql =&quot;UPDATE `smart home`.TV_control SET state=&apos;$value&apos; WHERE ID = &apos;1&apos;&quot;;//&#x66F4;&#x65B0;&#x76F8;&#x5E94;&#x7684;&#x4F20;&#x611F;&#x5668;&#x7684;&#x503C;</div><div class="line">        if(!mysqli_query($conn,$sql)){</div><div class="line">            //die(&apos;Error: &apos; . mysqli_error());//&#x5982;&#x679C;&#x51FA;&#x9519;&#xFF0C;&#x663E;&#x793A;&#x9519;&#x8BEF;</div><div class="line">            $retMsg=&quot;&#x7F51;&#x7EDC;&#x4E0D;&#x592A;&#x597D;,&#x8BF7;&#x518D;&#x53D1;&#x9001;&#x4E00;&#x6B21;&quot;;</div><div class="line">        }else{</div><div class="line">            $retMsg=&quot;&#x9075;&#x547D;!&quot;;</div><div class="line">        }</div><div class="line">        mysqli_close($conn);</div><div class="line">        return $retMsg;</div><div class="line">    }</div><div class="line">}</div><div class="line"></div><div class="line">?&gt;</div><div class="line">```## esp8266 &amp; arduino&#xFF1A;</div><div class="line">### &#x4E00;&#x3001;&#x63A5;&#x7EBF;&#xFF1A;</div><div class="line">&#x7EA2;&#x5916;&#x53D1;&#x5C04;&#x63A5;&#x7EBF;&#x56FE;&#xFF1A;</div><div class="line">![](http://od5ckzkb4.bkt.clouddn.com/14732374837891.jpg)</div><div class="line"></div><div class="line">&#x7EA2;&#x5916;&#x63A5;&#x6536;&#x63A5;&#x7EBF;&#x56FE;&#xFF1A;</div><div class="line">![](http://od5ckzkb4.bkt.clouddn.com/14732374146829.jpg)</div><div class="line"></div><div class="line">&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x63A5;&#x7EBF;&#x56FE;&#xFF1A;</div><div class="line">![](http://od5ckzkb4.bkt.clouddn.com/14732374582354.jpg)</div><div class="line"></div><div class="line"></div><div class="line">ESP8266&#x9488;&#x811A;&#x8BF4;&#x660E;:</div><div class="line">![](http://od5ckzkb4.bkt.clouddn.com/14732378614470.jpg)</div><div class="line"></div><div class="line">&#x6A21;&#x5757;&#x8981;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x53EA;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x516B;&#x4E2A;&#x9488;&#x811A;&#x4E2D;&#x7684;&#x4E94;&#x4E2A;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x5206;&#x522B;&#x662F;GND&#x3001;VCC&#x3001;UTXD&#x3001;URXD&#x3001;CHPD&#xFF0C;&#x5C06;&#x9488;&#x811A;&#x5206;&#x522B;&#x8FDE;&#x63A5;&#x5230;&#x8F6F;&#x4E32;&#x53E3;&#x548C;&#x6B63;&#x8D1F;&#x6781;&#xFF0C;UTXD&#x63A5;RXD&#xFF0C;URXD&#x63A5;TXD&#xFF0C;CH_PD&#x4E0E;VCC&#x4E4B;&#x95F4;&#x4E32;&#x8054;&#x4E00;&#x4E2A;&#x7535;&#x963B;&#xFF08;&#x5176;&#x5B9E;&#x4E32;&#x4E0D;&#x4E32;&#x7535;&#x963B;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x6211;&#x5C31;&#x662F;&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x7684;&#xFF09;</div><div class="line"></div><div class="line">&#x6548;&#x679C;&#x56FE;&#xFF1A;![](http://od5ckzkb4.bkt.clouddn.com/IMG_1384.jpg)</div><div class="line">### &#x4E8C;&#x3001;&#x7A0B;&#x5E8F;&#xFF1A;</div></pre></td></tr></table></figure>
-<p>#include <onewire.h></onewire.h></p>
-<p>#include <dallastemperature.h></dallastemperature.h></p>
-<p>#include <softwareserial.h></softwareserial.h></p>
-<p>#include <irremote.h></irremote.h></p>
-<p>// &#x5B9A;&#x4E49;DS18B20&#x6570;&#x636E;&#x53E3;&#x8FDE;&#x63A5;arduino&#x7684;2&#x53F7;IO&#x4E0A;</p>
-<p>#define ONE_WIRE_BUS  2</p>
-<p>#define WIFI_TX       9</p>
-<p>#define WIFI_RX       8</p>
-<p>SoftwareSerial wifi(WIFI_RX, WIFI_TX);   //RX, TX<br>IRsend irsend;<br>// &#x521D;&#x59CB;&#x8FDE;&#x63A5;&#x5728;&#x5355;&#x603B;&#x7EBF;&#x4E0A;&#x7684;&#x5355;&#x603B;&#x7EBF;&#x8BBE;&#x5907;<br>OneWire oneWire(ONE_WIRE_BUS);<br>DallasTemperature sensors(&amp;oneWire);<br>int temp=0;<br>String _comdata_wifi = &#x201C;&#x201D;;<br>String num=&#x201D;&#x201D;;<br>int khz = 38;<br>char c;</p>
-<p>//&#x7535;&#x89C6;&#x9065;&#x63A7;&#x5668;&#x5404;&#x4E2A;&#x6309;&#x952E;&#x7684;&#x7EA2;&#x5916;&#x7F16;&#x7801;<br>unsigned int swich[] = {850,900, 900,850, 1750,850, 900,1750, 1750,850, 900,850, 900,850, 900,850, 900,850, 900,850, 900,1750, 900};<br>unsigned int soundup[]={850,900, 1700,900, 900,850, 900,1700, 1750,950, 850,850, 900,1700, 1800,1700, 900,850, 1800};<br>unsigned int sounddown[]={900,850, 900,850, 1750,900, 850,1750, 1750,900, 850,900, 850,1750, 900,850, 1750,1750, 1750};<br>unsigned int pageup[]={850,900, 1700,900, 850,900, 850,1800, 1700,850, 900,850, 900,1750, 900,850, 1750,850, 900,1800, 850};<br>unsigned int pagedown[]={850,900, 850,900, 1700,950, 850,1750, 1700,950, 850,900, 850,1750, 850,900, 850,900, 1700,1800, 850};<br>unsigned int num1[]={900,850, 1750,850, 950,850, 900,1700, 1750,850, 900,850, 950,1700, 900,850, 900,850, 900,900, 1700};<br>unsigned int num2[]={850,850, 900,850, 1750,900, 900,1700, 1750,900, 900,850, 900,1750, 850,900, 850,900, 850,900, 850,900, 850};<br>unsigned int num3[]={900,900, 1750,850, 900,850, 900,1750, 1750,850, 900,1750, 1750,850, 900,850, 900,850, 900,850, 900};<br>unsigned int num4[]={900,900, 850,850, 1750,850, 900,1750, 1750,850, 900,1800, 1700,900, 850,900, 850,1800, 1700};<br>unsigned int num5[]={850,850, 1750,900, 850,900, 850,1800, 1700,900, 850,1800, 1700,900, 850,900, 850,1800, 850,900, 850};<br>unsigned int num6[]={900,850, 900,900, 1700,900, 900,1700, 1750,900, 900,1700, 1750,900, 900,1700, 1750,900, 850};<br>unsigned int num7[]={850,850, 1800,850, 900,850, 900,1750, 1700,900, 850,1800, 1750,850, 850,1800, 850,900, 1750};<br>unsigned int num8[]={850,850, 900,900, 1700,900, 900,1700, 1750,900, 850,1750, 1750,900, 850,1750, 900,850, 900,850, 900};<br>unsigned int num9[]={850,850, 1750,900, 900,900, 850,1750, 1700,950, 850,1750, 1700,1800, 1700,950, 850,900, 850};<br>unsigned int num0[]={900,850, 900,850, 1750,850, 900,1750, 1750,850, 900,1750, 1750,1750, 1750,1750, 850,900, 850};</p>
-<p>void setup(void)<br>{<br>  // &#x8BBE;&#x7F6E;&#x4E32;&#x53E3;&#x901A;&#x4FE1;&#x6CE2;&#x7279;&#x7387;<br>  Serial.begin(115200);<br>  wifi.begin(115200);<br>  Serial.println(&#x201C;Dallas Temperature IC Control Library Demo&#x201D;);<br>  // &#x521D;&#x59CB;&#x5E93;<br>  sensors.begin();<br>}</p>
-<p>void loop(void)<br>{<br>  sensors.requestTemperatures(); // &#x53D1;&#x9001;&#x547D;&#x4EE4;&#x83B7;&#x53D6;&#x6E29;&#x5EA6;<br>  Serial.println(&#x201C;DONE&#x201D;);<br>  temp=sensors.getTempCByIndex(0);<br>  wifi.print(&#x201C;GET /updown.php?token=doubleq&amp;data=&#x201D;);<br>  wifi.println(temp);<br>  Serial.println(temp);<br>  delay(1500);<br>   getWifiSerialData();<br>  if(Serial.available()){<br>    String order = &#x201C;&#x201D;;<br>    while (Serial.available()){<br>      char cc = (char)Serial.read();<br>      order += cc;<br>      delay(2);<br>    }<br>    order.trim();<br>    wifi.println(order);<br>  }<br>  if(_comdata_wifi!=&#x201D;&#x201D;){<br>    Serial.println(_comdata_wifi);<br>    _comdata_wifi = String(&#x201C;&#x201D;);<br>  }<br>  if(num==&#x201D;1&#x201D;){<br>    irsend.sendRaw(swich, sizeof(swich), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;2&#x201D;){<br>    irsend.sendRaw(soundup, sizeof(soundup), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;3&#x201D;){<br>    irsend.sendRaw(sounddown, sizeof(sounddown), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;4&#x201D;){<br>    irsend.sendRaw(pageup, sizeof(pageup), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;5&#x201D;){<br>    irsend.sendRaw(pagedown, sizeof(pagedown), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;6&#x201D;){<br>    irsend.sendRaw(num1, sizeof(num1), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;7&#x201D;){<br>    irsend.sendRaw(num2, sizeof(num2), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;8&#x201D;){<br>    irsend.sendRaw(num3, sizeof(num3), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;9&#x201D;){<br>    irsend.sendRaw(num4, sizeof(num4), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;10&#x201D;){<br>    irsend.sendRaw(num5, sizeof(num5), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;&#x53BB;&#x201D;){<br>    irsend.sendRaw(num6, sizeof(num6), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;12&#x201D;){<br>    irsend.sendRaw(num7, sizeof(num7), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;13&#x201D;){<br>    irsend.sendRaw(num8, sizeof(num8), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;14&#x201D;){<br>    irsend.sendRaw(num9, sizeof(num9), khz);<br>    Serial.println(num);<br>    }<br>  if(num==&#x201D;15&#x201D;){<br>    irsend.sendRaw(num0, sizeof(num0), khz);<br>    Serial.println(num);<br>    }<br>  Serial.println(num);<br>  delay(1000);<br>}<br>void getWifiSerialData(){<br>  while (wifi.available() &gt; 0){<br>    c=wifi.read();<br>    _comdata_wifi += c;   //get wifi data<br>    if ( c == &#x2018;{&#x2018;){<br>      c = wifi.read();<br>      num = c;<br>      _comdata_wifi += c;<br>      c = wifi.read();<br>      while(c!=&#x2019;}&#x2019;)<br>      {<br>        num += c;<br>        _comdata_wifi += c;<br>        c = wifi.read();<br>        }<br>        _comdata_wifi += c;<br>    }<br>    delay(4);<br>  }<br>}<br>```</p>
+<h3 id="si-dai-ma-shi-li"><a href="#&#x56DB;&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;" class="headerlink" title="&#x56DB;&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;"></a>&#x56DB;&#x3001;&#x4EE3;&#x7801;&#x793A;&#x4F8B;</h3><pre><code class="php"><span class="meta">&lt;?php</span>
+<span class="comment">//define your token</span>
+define(<span class="string">&quot;TOKEN&quot;</span>, <span class="string">&quot;weixin&quot;</span>); <span class="comment">//&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x4E2D;&#x7684;&#x9A8C;&#x8BC1;&#x7801;</span>
+$wechatObj = <span class="keyword">new</span> wechatCallbackapiTest();
+<span class="keyword">if</span>($_GET[<span class="string">&quot;echostr&quot;</span>]){
+    $wechatObj-&gt;valid();
+}<span class="keyword">else</span>{
+    $wechatObj-&gt;responseMsg();
+}
+
+<span class="class"><span class="keyword">class</span> <span class="title">wechatCallbackapiTest</span>
+</span>{
+    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">valid</span><span class="params">()</span>
+    </span>{
+        $echoStr = $_GET[<span class="string">&quot;echostr&quot;</span>];
+
+        <span class="comment">//valid signature , option</span>
+        <span class="keyword">if</span>(<span class="keyword">$this</span>-&gt;checkSignature()){
+            <span class="keyword">echo</span> $echoStr;
+            <span class="keyword">exit</span>;
+        }
+    }
+
+    <span class="comment">/**
+     *
+     */</span>
+    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">responseMsg</span><span class="params">()</span>
+    </span>{
+        <span class="comment">//get post data, May be due to the different environments</span>
+        $postStr = $GLOBALS[<span class="string">&quot;HTTP_RAW_POST_DATA&quot;</span>];
+
+        <span class="comment">//extract post data</span>
+        <span class="keyword">if</span> (!<span class="keyword">empty</span>($postStr)) {
+            <span class="comment">/* libxml_disable_entity_loader is to prevent XML eXternal Entity Injection,
+               the best way is to check the validity of xml by yourself */</span>
+            libxml_disable_entity_loader(<span class="keyword">true</span>);
+            $postObj = simplexml_load_string($postStr, <span class="string">&apos;SimpleXMLElement&apos;</span>, LIBXML_NOCDATA);
+            $fromUsername = $postObj-&gt;FromUserName;
+            $toUsername = $postObj-&gt;ToUserName;
+            $msgType = $postObj-&gt;MsgType;
+            $keyword = trim($postObj-&gt;Content);
+            $Event = $postObj-&gt;Event;
+            $time = time();
+            $textTpl = <span class="string">&quot;&lt;xml&gt;
+                            &lt;ToUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/ToUserName&gt;
+                            &lt;FromUserName&gt;&lt;![CDATA[%s]]&gt;&lt;/FromUserName&gt;
+                            &lt;CreateTime&gt;%s&lt;/CreateTime&gt;
+                            &lt;MsgType&gt;&lt;![CDATA[%s]]&gt;&lt;/MsgType&gt;
+                            &lt;Content&gt;&lt;![CDATA[%s]]&gt;&lt;/Content&gt;
+                            &lt;FuncFlag&gt;0&lt;/FuncFlag&gt;
+                            &lt;/xml&gt;&quot;</span>;
+                            <span class="comment">//&#x5173;&#x6CE8;&#x516C;&#x4F17;&#x53F7;&#x540E;&#xFF0C;&#x5F15;&#x53D1;&#x6B64;&#x4E8B;&#x4EF6;</span>
+            <span class="keyword">if</span> ($Event == <span class="string">&quot;subscribe&quot;</span>) {
+                $msgType = <span class="string">&quot;text&quot;</span>;
+                $retMsg = <span class="string">&quot;&#x6B22;&#x8FCE;&#x6765;&#x5230;&#x667A;&#x6167;&#x5BB6;&#x5C45;&#xFF01;&quot;</span>;
+                <span class="comment">// $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $contentStr);</span>
+                <span class="comment">// echo $resultStr;</span>
+            }
+            <span class="keyword">if</span> ($msgType == <span class="string">&apos;voice&apos;</span>) {<span class="comment">//&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x8BED;&#x97F3;</span>
+                $content = $postObj-&gt;Recognition;
+            } <span class="keyword">elseif</span> ($msgType == <span class="string">&apos;text&apos;</span>) {
+                $content = $postObj-&gt;Content;
+            } <span class="keyword">else</span> {
+                $retMsg = <span class="string">&apos;&#x53EA;&#x652F;&#x6301;&#x6587;&#x672C;&#x548C;&#x8BED;&#x97F3;&#x6D88;&#x606F;&apos;</span>;
+            }
+            <span class="keyword">if</span> (strstr($content, <span class="string">&quot;&#x6E29;&#x5EA6;&quot;</span>)) {
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                mysqli_select_db($conn,<span class="string">&quot;smart home&quot;</span>);<span class="comment">//&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;</span>
+                $result = mysqli_query($conn,<span class="string">&quot;SELECT * FROM `smart home`.sensor_temp WHERE ID =&apos;1&apos;&quot;</span>);
+                <span class="keyword">while</span>($arr = mysqli_fetch_array($result)){<span class="comment">//&#x627E;&#x5230;&#x9700;&#x8981;&#x7684;&#x6570;&#x636E;&#x7684;&#x8BB0;&#x5F55;&#xFF0C;&#x5E76;&#x8BFB;&#x51FA;&#x72B6;&#x6001;&#x503C;</span>
+                    <span class="keyword">if</span> ($arr[<span class="string">&apos;ID&apos;</span>] == <span class="number">1</span>) {
+                        $tm = $arr[<span class="string">&apos;timestamp&apos;</span>];
+                        $temp=$arr[<span class="string">&apos;temp&apos;</span>];
+                    }
+                }
+                mysqli_close($conn);
+                $retMsg=<span class="string">&quot;&#x4E3B;&#x4EBA;&#x60A8;&#x597D;,&#x73B0;&#x5728;&#x662F;&#x5317;&#x4EAC;&#x65F6;&#x95F4;:&quot;</span>.$tm.<span class="string">&quot; &quot;</span>.<span class="string">&quot;\n&quot;</span>.<span class="string">&quot;&#x73B0;&#x5728;&#x7684;&#x5BA4;&#x6E29;&#x4E3A;&quot;</span>.$temp.<span class="string">&quot;&#x2103;&#xFF0C;&#x8FD8;&#x6709;&#x4EC0;&#x4E48;&#x5429;&#x5490;&#x5462;?&quot;</span>;
+                <span class="comment">//$msgType=&quot;text&quot;;</span>
+            }<span class="keyword">elseif</span> (!<span class="keyword">empty</span>($content)){
+                $msgType=<span class="string">&quot;text&quot;</span>;
+                $retMsg=<span class="string">&quot;&#x60A8;&#x53EF;&#x4EE5;&#x53D1;&#x9001; (&#x6E29;&#x5EA6;) &#x6765;&#x83B7;&#x53D6;&#x60A8;&#x5BB6;&#x91CC;&#x7684;&#x6E29;&#x5EA6;&#x3002;&quot;</span>;
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;&#x5F00;&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">1</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;&#x97F3;&#x91CF;+&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">2</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;&#x97F3;&#x91CF;-&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">3</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;+&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg= <span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">4</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;-&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">5</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;1&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">6</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;2&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">7</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;3&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">8</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;4&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">9</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;5&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">10</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;6&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,&#x53BB;);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;7&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">12</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;8&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">13</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;9&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">14</span>);
+            }
+            <span class="keyword">if</span> (strstr($content,<span class="string">&quot;0&quot;</span>)){
+                $conn=<span class="keyword">$this</span>-&gt;connection_mysql();
+                $retMsg=<span class="keyword">$this</span>-&gt;TV_control($conn,<span class="number">15</span>);
+            }
+            $msgType=<span class="string">&quot;text&quot;</span>;
+            $resultStr = sprintf($textTpl, $fromUsername, $toUsername, $time, $msgType, $retMsg);
+            <span class="keyword">echo</span> $resultStr;
+        }
+    }
+    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">checkSignature</span><span class="params">()</span>
+    </span>{
+        <span class="comment">// you must define TOKEN by yourself</span>
+        <span class="keyword">if</span> (!defined(<span class="string">&quot;TOKEN&quot;</span>)) {
+            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="keyword">Exception</span>(<span class="string">&apos;TOKEN is not defined!&apos;</span>);
+        }
+        $signature = $_GET[<span class="string">&quot;signature&quot;</span>];
+        $timestamp = $_GET[<span class="string">&quot;timestamp&quot;</span>];
+        $nonce = $_GET[<span class="string">&quot;nonce&quot;</span>];
+        $token = TOKEN;
+        $tmpArr = <span class="keyword">array</span>($token, $timestamp, $nonce);
+        <span class="comment">// use SORT_STRING rule</span>
+        sort($tmpArr, SORT_STRING);
+        $tmpStr = implode( $tmpArr );
+        $tmpStr = sha1( $tmpStr );
+        <span class="keyword">if</span>( $tmpStr == $signature ){
+            <span class="keyword">return</span> <span class="keyword">true</span>;
+        }<span class="keyword">else</span>{
+            <span class="keyword">return</span> <span class="keyword">false</span>;
+        }
+    }
+    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">connection_mysql</span><span class="params">()</span>
+    </span>{
+        $dbhost = <span class="string">&apos;localhost:3306&apos;</span>;  <span class="comment">//mysql&#x670D;&#x52A1;&#x5668;&#x4E3B;&#x673A;&#x5730;&#x5740;</span>
+        $dbuser = <span class="string">&apos;root&apos;</span>;      <span class="comment">//mysql&#x7528;&#x6237;&#x540D;</span>
+        $dbpass = <span class="string">&apos;591039996&apos;</span>;<span class="comment">//mysql&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;</span>
+        $con = mysqli_connect($dbhost, $dbuser, $dbpass);
+        <span class="keyword">if</span>(! $con )
+        {
+            <span class="keyword">die</span>(<span class="string">&apos;Could not connect: &apos;</span> . mysqli_error());
+        }
+        <span class="keyword">echo</span> <span class="string">&apos;Connected successfully&apos;</span>;
+        <span class="keyword">return</span> $con;
+    }
+    <span class="keyword">private</span> <span class="function"><span class="keyword">function</span> <span class="title">TV_control</span><span class="params">($conn,$value)</span>
+    </span>{
+        mysqli_select_db($conn,<span class="string">&quot;smart home&quot;</span>);
+        $sql =<span class="string">&quot;UPDATE `smart home`.TV_control SET state=&apos;$value&apos; WHERE ID = &apos;1&apos;&quot;</span>;<span class="comment">//&#x66F4;&#x65B0;&#x76F8;&#x5E94;&#x7684;&#x4F20;&#x611F;&#x5668;&#x7684;&#x503C;</span>
+        <span class="keyword">if</span>(!mysqli_query($conn,$sql)){
+            <span class="comment">//die(&apos;Error: &apos; . mysqli_error());//&#x5982;&#x679C;&#x51FA;&#x9519;&#xFF0C;&#x663E;&#x793A;&#x9519;&#x8BEF;</span>
+            $retMsg=<span class="string">&quot;&#x7F51;&#x7EDC;&#x4E0D;&#x592A;&#x597D;,&#x8BF7;&#x518D;&#x53D1;&#x9001;&#x4E00;&#x6B21;&quot;</span>;
+        }<span class="keyword">else</span>{
+            $retMsg=<span class="string">&quot;&#x9075;&#x547D;!&quot;</span>;
+        }
+        mysqli_close($conn);
+        <span class="keyword">return</span> $retMsg;
+    }
+}
+
+<span class="meta">?&gt;</span>
+</code></pre>
+<h2 id="esp8266-arduino"><a href="#esp8266-amp-arduino" class="headerlink" title="esp8266 &amp; arduino"></a>esp8266 &amp; arduino</h2><h3 id="yi-jie-xian"><a href="#&#x4E00;&#x3001;&#x63A5;&#x7EBF;" class="headerlink" title="&#x4E00;&#x3001;&#x63A5;&#x7EBF;"></a>&#x4E00;&#x3001;&#x63A5;&#x7EBF;</h3><p>&#x7EA2;&#x5916;&#x53D1;&#x5C04;&#x63A5;&#x7EBF;&#x56FE;&#xFF1A;<br><img src="http://od5ckzkb4.bkt.clouddn.com/14732374837891.jpg" alt=""></p>
+<p>&#x7EA2;&#x5916;&#x63A5;&#x6536;&#x63A5;&#x7EBF;&#x56FE;&#xFF1A;<br><img src="http://od5ckzkb4.bkt.clouddn.com/14732374146829.jpg" alt=""></p>
+<p>&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x63A5;&#x7EBF;&#x56FE;&#xFF1A;<br><img src="http://od5ckzkb4.bkt.clouddn.com/14732374582354.jpg" alt=""></p>
+<p>ESP8266&#x9488;&#x811A;&#x8BF4;&#x660E;:<br><img src="http://od5ckzkb4.bkt.clouddn.com/14732378614470.jpg" alt=""></p>
+<p>&#x6A21;&#x5757;&#x8981;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#x53EA;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x516B;&#x4E2A;&#x9488;&#x811A;&#x4E2D;&#x7684;&#x4E94;&#x4E2A;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x5206;&#x522B;&#x662F;GND&#x3001;VCC&#x3001;UTXD&#x3001;URXD&#x3001;CHPD&#xFF0C;&#x5C06;&#x9488;&#x811A;&#x5206;&#x522B;&#x8FDE;&#x63A5;&#x5230;&#x8F6F;&#x4E32;&#x53E3;&#x548C;&#x6B63;&#x8D1F;&#x6781;&#xFF0C;UTXD&#x63A5;RXD&#xFF0C;URXD&#x63A5;TXD&#xFF0C;CH_PD&#x4E0E;VCC&#x4E4B;&#x95F4;&#x4E32;&#x8054;&#x4E00;&#x4E2A;&#x7535;&#x963B;&#xFF08;&#x5176;&#x5B9E;&#x4E32;&#x4E0D;&#x4E32;&#x7535;&#x963B;&#x90FD;&#x53EF;&#x4EE5;&#xFF0C;&#x6211;&#x5C31;&#x662F;&#x76F4;&#x63A5;&#x8FDE;&#x63A5;&#x7684;&#xFF09;</p>
+<p>&#x6548;&#x679C;&#x56FE;&#xFF1A;<br><img src="http://od5ckzkb4.bkt.clouddn.com/IMG_1384.jpg" alt=""></p>
+<h3 id="er-cheng-xu"><a href="#&#x4E8C;&#x3001;&#x7A0B;&#x5E8F;&#xFF1A;" class="headerlink" title="&#x4E8C;&#x3001;&#x7A0B;&#x5E8F;&#xFF1A;"></a>&#x4E8C;&#x3001;&#x7A0B;&#x5E8F;&#xFF1A;</h3><pre><code class="c"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;OneWire.h&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;DallasTemperature.h&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;SoftwareSerial.h&gt;</span></span>
+<span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;IRremote.h&gt;</span></span>
+
+<span class="comment">// &#x5B9A;&#x4E49;DS18B20&#x6570;&#x636E;&#x53E3;&#x8FDE;&#x63A5;arduino&#x7684;2&#x53F7;IO&#x4E0A;</span>
+<span class="meta">#<span class="meta-keyword">define</span> ONE_WIRE_BUS  2</span>
+<span class="meta">#<span class="meta-keyword">define</span> WIFI_TX       9</span>
+<span class="meta">#<span class="meta-keyword">define</span> WIFI_RX       8</span>
+
+<span class="function">SoftwareSerial <span class="title">wifi</span><span class="params">(WIFI_RX, WIFI_TX)</span></span>;   <span class="comment">//RX, TX</span>
+IRsend irsend;
+<span class="comment">// &#x521D;&#x59CB;&#x8FDE;&#x63A5;&#x5728;&#x5355;&#x603B;&#x7EBF;&#x4E0A;&#x7684;&#x5355;&#x603B;&#x7EBF;&#x8BBE;&#x5907;</span>
+<span class="function">OneWire <span class="title">oneWire</span><span class="params">(ONE_WIRE_BUS)</span></span>;
+<span class="function">DallasTemperature <span class="title">sensors</span><span class="params">(&amp;oneWire)</span></span>;
+<span class="keyword">int</span> temp=<span class="number">0</span>;
+String <span class="number">_</span>comdata_wifi = <span class="string">&quot;&quot;</span>;
+String num=<span class="string">&quot;&quot;</span>;
+<span class="keyword">int</span> khz = <span class="number">38</span>;
+<span class="keyword">char</span> c;
+
+<span class="comment">//&#x7535;&#x89C6;&#x9065;&#x63A7;&#x5668;&#x5404;&#x4E2A;&#x6309;&#x952E;&#x7684;&#x7EA2;&#x5916;&#x7F16;&#x7801;</span>
+<span class="keyword">unsigned</span> <span class="keyword">int</span> swich[] = {<span class="number">850</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">900</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> soundup[]={<span class="number">850</span>,<span class="number">900</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1750</span>,<span class="number">950</span>, <span class="number">850</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1800</span>,<span class="number">1700</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">1800</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> sounddown[]={<span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">1750</span>, <span class="number">1750</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> pageup[]={<span class="number">850</span>,<span class="number">900</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1800</span>, <span class="number">1700</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1800</span>, <span class="number">850</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> pagedown[]={<span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">1700</span>,<span class="number">950</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">1700</span>,<span class="number">950</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">1700</span>,<span class="number">1800</span>, <span class="number">850</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num1[]={<span class="number">900</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">950</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">950</span>,<span class="number">1700</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">900</span>, <span class="number">1700</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num2[]={<span class="number">850</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num3[]={<span class="number">900</span>,<span class="number">900</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num4[]={<span class="number">900</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1800</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1800</span>, <span class="number">1700</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num5[]={<span class="number">850</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1800</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1800</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1800</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num6[]={<span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">900</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">850</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num7[]={<span class="number">850</span>,<span class="number">850</span>, <span class="number">1800</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1800</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">850</span>,<span class="number">1800</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">1750</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num8[]={<span class="number">850</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">900</span>, <span class="number">1700</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">1700</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num9[]={<span class="number">850</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">900</span>, <span class="number">900</span>,<span class="number">900</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">1700</span>,<span class="number">950</span>, <span class="number">850</span>,<span class="number">1750</span>, <span class="number">1700</span>,<span class="number">1800</span>, <span class="number">1700</span>,<span class="number">950</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>};
+<span class="keyword">unsigned</span> <span class="keyword">int</span> num0[]={<span class="number">900</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">850</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">850</span>, <span class="number">900</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">1750</span>, <span class="number">1750</span>,<span class="number">1750</span>, <span class="number">850</span>,<span class="number">900</span>, <span class="number">850</span>};
+
+<span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">(<span class="keyword">void</span>)</span>
+</span>{
+  <span class="comment">// &#x8BBE;&#x7F6E;&#x4E32;&#x53E3;&#x901A;&#x4FE1;&#x6CE2;&#x7279;&#x7387;</span>
+  Serial.begin(<span class="number">115200</span>);
+  wifi.begin(<span class="number">115200</span>);
+  Serial.println(<span class="string">&quot;Dallas Temperature IC Control Library Demo&quot;</span>);
+  <span class="comment">// &#x521D;&#x59CB;&#x5E93;</span>
+  sensors.begin();
+}
+
+<span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">(<span class="keyword">void</span>)</span>
+</span>{
+  sensors.requestTemperatures(); <span class="comment">// &#x53D1;&#x9001;&#x547D;&#x4EE4;&#x83B7;&#x53D6;&#x6E29;&#x5EA6;</span>
+  Serial.println(<span class="string">&quot;DONE&quot;</span>);
+  temp=sensors.getTempCByIndex(<span class="number">0</span>);
+  wifi.print(<span class="string">&quot;GET /updown.php?token=doubleq&amp;data=&quot;</span>);
+  wifi.println(temp);
+  Serial.println(temp);
+  delay(<span class="number">1500</span>);
+   getWifiSerialData();
+  <span class="keyword">if</span>(Serial.available()){
+    String order = <span class="string">&quot;&quot;</span>;
+    <span class="keyword">while</span> (Serial.available()){
+      <span class="keyword">char</span> cc = (<span class="keyword">char</span>)Serial.read();
+      order += cc;
+      delay(<span class="number">2</span>);
+    }
+    order.trim();
+    wifi.println(order);
+  }
+  <span class="keyword">if</span>(<span class="number">_</span>comdata_wifi!=<span class="string">&quot;&quot;</span>){
+    Serial.println(<span class="number">_</span>comdata_wifi);
+    <span class="number">_</span>comdata_wifi = String(<span class="string">&quot;&quot;</span>);
+  }
+  <span class="keyword">if</span>(num==<span class="string">&quot;1&quot;</span>){
+    irsend.sendRaw(swich, <span class="keyword">sizeof</span>(swich), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;2&quot;</span>){
+    irsend.sendRaw(soundup, <span class="keyword">sizeof</span>(soundup), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;3&quot;</span>){
+    irsend.sendRaw(sounddown, <span class="keyword">sizeof</span>(sounddown), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;4&quot;</span>){
+    irsend.sendRaw(pageup, <span class="keyword">sizeof</span>(pageup), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;5&quot;</span>){
+    irsend.sendRaw(pagedown, <span class="keyword">sizeof</span>(pagedown), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;6&quot;</span>){
+    irsend.sendRaw(num1, <span class="keyword">sizeof</span>(num1), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;7&quot;</span>){
+    irsend.sendRaw(num2, <span class="keyword">sizeof</span>(num2), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;8&quot;</span>){
+    irsend.sendRaw(num3, <span class="keyword">sizeof</span>(num3), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;9&quot;</span>){
+    irsend.sendRaw(num4, <span class="keyword">sizeof</span>(num4), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;10&quot;</span>){
+    irsend.sendRaw(num5, <span class="keyword">sizeof</span>(num5), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;&#x53BB;&quot;</span>){
+    irsend.sendRaw(num6, <span class="keyword">sizeof</span>(num6), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;12&quot;</span>){
+    irsend.sendRaw(num7, <span class="keyword">sizeof</span>(num7), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;13&quot;</span>){
+    irsend.sendRaw(num8, <span class="keyword">sizeof</span>(num8), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;14&quot;</span>){
+    irsend.sendRaw(num9, <span class="keyword">sizeof</span>(num9), khz);
+    Serial.println(num);
+    }
+  <span class="keyword">if</span>(num==<span class="string">&quot;15&quot;</span>){
+    irsend.sendRaw(num0, <span class="keyword">sizeof</span>(num0), khz);
+    Serial.println(num);
+    }
+  Serial.println(num);
+  delay(<span class="number">1000</span>);
+}
+<span class="function"><span class="keyword">void</span> <span class="title">getWifiSerialData</span><span class="params">()</span></span>{
+  <span class="keyword">while</span> (wifi.available() &gt; <span class="number">0</span>){
+    c=wifi.read();
+    <span class="number">_</span>comdata_wifi += c;   <span class="comment">//get wifi data</span>
+    <span class="keyword">if</span> ( c == <span class="string">&apos;{&apos;</span>){
+      c = wifi.read();
+      num = c;
+      <span class="number">_</span>comdata_wifi += c;
+      c = wifi.read();
+      <span class="keyword">while</span>(c!=<span class="string">&apos;}&apos;</span>)
+      {
+        num += c;
+        <span class="number">_</span>comdata_wifi += c;
+        c = wifi.read();
+        }
+        <span class="number">_</span>comdata_wifi += c;
+    }
+    delay(<span class="number">4</span>);
+  }
+}
+</code></pre>
 <h3 id="san-yuan-li-jie-xi"><a href="#&#x4E09;&#x3001;&#x539F;&#x7406;&#x89E3;&#x6790;&#xFF1A;" class="headerlink" title="&#x4E09;&#x3001;&#x539F;&#x7406;&#x89E3;&#x6790;&#xFF1A;"></a>&#x4E09;&#x3001;&#x539F;&#x7406;&#x89E3;&#x6790;&#xFF1A;</h3><p>esp8266&#x4E0E;arduino&#x7684;&#x901A;&#x4FE1;&#x7684;&#x901A;&#x8FC7;&#x4E32;&#x53E3;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x501F;&#x52A9;&#x7740;arduino&#x5F3A;&#x5927;&#x7684;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x5B83;&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x4E24;&#x4E2A;IO&#x5F15;&#x811A;&#x4F5C;&#x4E3A;TTL&#x4E32;&#x53E3;&#x7684;&#x5F15;&#x811A;&#xFF08;&#x5206;&#x522B;&#x4E3A;7&#x3001;8&#x5F15;&#x811A;&#xFF09;&#xFF0C;&#x7528;&#x8F6F;&#x4EF6;&#x53BB;&#x5B9E;&#x73B0;&#x4E32;&#x53E3;&#x7684;&#x529F;&#x80FD;&#x3002;</p>
 <p>esp8266:<br>&#x5B83;&#x662F;&#x4E00;&#x5757;WIFI&#x6A21;&#x5757;&#x7684;&#x677F;&#x5B50;&#xFF0C;&#x5176;&#x6709;&#x4E09;&#x79CD;&#x6A21;&#x5F0F;&#xFF0C;&#x800C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x5BA2;&#x6237;&#x7AEF;&#x6A21;&#x5F0F;&#x3002;&#x5F00;&#x542F;&#x6B64;&#x6A21;&#x5F0F;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x50CF;&#x7535;&#x8111;&#x4E00;&#x6837;&#x8FDE;&#x63A5;&#x4F60;&#x4EEC;&#x5BB6;&#x7684;&#x65E0;&#x7EBF;&#x8DEF;&#x7531;&#x5668;&#x4E86;&#x3002;&#x540C;&#x65F6;&#xFF0C;esp8266&#x6709;&#x5F88;&#x591A;&#x79CD;&#x578B;&#x53F7;&#xFF0C;&#x6211;&#x7528;&#x7684;&#x662F;esp8266-01&#xFF0C;&#x5B83;&#x6709;&#x4E24;&#x4E2A;GPIO&#x53E3;&#xFF0C;&#x6240;&#x4EE5;&#x5982;&#x679C;&#x4F60;&#x662F;&#x60F3;&#x505A;&#x4E2A;&#x5C0F;&#x5B9E;&#x9A8C;&#xFF0C;&#x63A7;&#x5236;&#x4E00;&#x4E2A;LED&#x706F;&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x4E0D;&#x9700;&#x8981;arduino&#xFF0C;&#x7528;&#x8FD9;&#x5757;&#x677F;&#x5B50;&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x4E86;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x503C;&#x5F97;&#x5173;&#x6CE8;&#x7684;&#x662F;&#xFF0C;esp8266&#x7684;&#x9AD8;&#x7248;&#x672C;&#x5F15;&#x51FA;&#x4E86;&#x66F4;&#x591A;&#x7684;GPIO&#xFF0C;&#x800C;&#x4E14;&#x529F;&#x80FD;&#x66F4;&#x4E3A;&#x5F3A;&#x5927;&#x3002;&#x4F60;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x9760;&#x5B83;&#x53BB;&#x5B9E;&#x73B0;&#x591A;&#x79CD;&#x529F;&#x80FD;&#x7684;&#x63A7;&#x5236;&#x3002;</p>
 <p>Arduino:&#x8FD9;&#x5757;&#x677F;&#x5B50;&#x5927;&#x5BB6;&#x5E94;&#x8BE5;&#x5F88;&#x719F;&#x6089;&#x4E86;&#x5427;&#xFF0C;&#x6211;&#x8FD9;&#x91CC;&#x5C31;&#x4E0D;&#x505A;&#x4ECB;&#x7ECD;&#x4E86;&#x3002;&#x9700;&#x8981;&#x8BF4;&#x660E;&#x4E00;&#x4E0B;&#x7684;&#x5C31;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x5230;&#x4E86;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x548C;&#x7EA2;&#x5916;&#x63A7;&#x5236;&#x7684;&#x5E93;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x4E0B;&#x8F7D;&#x76F8;&#x5173;&#x7684;&#x5E93;&#x653E;&#x5165;library&#x4E2D;&#x3002;&#x8FD9;&#x91CC;&#x63D0;&#x4F9B;&#x51E0;&#x4F4D;&#x5927;&#x795E;&#x7528;arduino&#x63A7;&#x5236;&#x7A7A;&#x8C03;&#x548C;&#x4F7F;&#x7528;&#x6E29;&#x5EA6;&#x4F20;&#x611F;&#x5668;&#x7684;&#x8D44;&#x6599;&#x3002;<br>&#x94FE;&#x63A5;&#xFF1A;<a href="http://www.arduino.cn/thread-3618-1-1.html" target="_blank" rel="external">http://www.arduino.cn/thread-3618-1-1.html</a><br><a href="http://www.arduino.cn/thread-1345-1-1.html" target="_blank" rel="external">http://www.arduino.cn/thread-1345-1-1.html</a></p>
@@ -630,7 +976,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#shi-yong-shu-mei-pai-arduino-he-esp8266-tong-guo-wei-xin-ke-hu-duan-shi-xian-wu-lian-wang-de-wan-zheng-jiao-cheng-shi-jian-pian-han-yuan-ma"><span class="nav-number">1.</span> <span class="nav-text">使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#dao-yan"><span class="nav-number">1.1.</span> <span class="nav-text">导言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zhu-yao-qi-cai"><span class="nav-number">1.2.</span> <span class="nav-text">主要器材：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shu-mei-pai-da-jian-fu-wu-qi"><span class="nav-number">1.3.</span> <span class="nav-text">树莓派搭建服务器：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#yi-ji-chu-gong-zuo"><span class="nav-number">1.3.1.</span> <span class="nav-text">一、基础工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-shu-mei-pai-ji-ben-she-zhi"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">1.树莓派基本设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-yuan-cheng-lian-jie-xiao-guo-tu"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">2.远程连接效果图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#er-web-fu-wu-qi-da-jian"><span class="nav-number">1.3.2.</span> <span class="nav-text">二、web服务器搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-an-zhuang-apache"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">1.安装 Apache</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-an-zhuang-mysql"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">2.安装 mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-an-zhuang-php"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">3.安装 PHP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-ce-shi"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">4.测试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#san-dai-ma-bu-shu"><span class="nav-number">1.3.3.</span> <span class="nav-text">三、代码部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#si-dai-ma-shi-li"><span class="nav-number">1.3.4.</span> <span class="nav-text">四、代码示例</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#san-yuan-li-jie-xi"><span class="nav-number">1.3.5.</span> <span class="nav-text">三、原理解析：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#si-cheng-xu-shao-xie"><span class="nav-number">1.3.6.</span> <span class="nav-text">四、程序烧写</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shou-ji-wei-xin-ke-hu-duan"><span class="nav-number">1.4.</span> <span class="nav-text">手机微信客户端：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#yi-ji-chu-zhi-shi"><span class="nav-number">1.4.1.</span> <span class="nav-text">一、基础知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#er-gong-zhong-hao-she-zhi"><span class="nav-number">1.4.2.</span> <span class="nav-text">二、公众号设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jian-cha-bing-diao-shi"><span class="nav-number">1.5.</span> <span class="nav-text">检查并调试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#yi-jian-cha"><span class="nav-number">1.5.1.</span> <span class="nav-text">一、检查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#er-diao-shi"><span class="nav-number">1.5.2.</span> <span class="nav-text">二、调试</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#shi-yong-shu-mei-pai-arduino-he-esp8266-tong-guo-wei-xin-ke-hu-duan-shi-xian-wu-lian-wang-de-wan-zheng-jiao-cheng-shi-jian-pian-han-yuan-ma"><span class="nav-number">1.</span> <span class="nav-text">使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#dao-yan"><span class="nav-number">1.1.</span> <span class="nav-text">导言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#zhu-yao-qi-cai"><span class="nav-number">1.2.</span> <span class="nav-text">主要器材：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shu-mei-pai-da-jian-fu-wu-qi"><span class="nav-number">1.3.</span> <span class="nav-text">树莓派搭建服务器：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#yi-ji-chu-gong-zuo"><span class="nav-number">1.3.1.</span> <span class="nav-text">一、基础工作</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-shu-mei-pai-ji-ben-she-zhi"><span class="nav-number">1.3.1.1.</span> <span class="nav-text">1.树莓派基本设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-yuan-cheng-lian-jie-xiao-guo-tu"><span class="nav-number">1.3.1.2.</span> <span class="nav-text">2.远程连接效果图</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#er-web-fu-wu-qi-da-jian"><span class="nav-number">1.3.2.</span> <span class="nav-text">二、web服务器搭建</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-an-zhuang-apache"><span class="nav-number">1.3.2.1.</span> <span class="nav-text">1.安装 Apache</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-an-zhuang-mysql"><span class="nav-number">1.3.2.2.</span> <span class="nav-text">2.安装 mysql</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-an-zhuang-php"><span class="nav-number">1.3.2.3.</span> <span class="nav-text">3.安装 PHP</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-ce-shi"><span class="nav-number">1.3.2.4.</span> <span class="nav-text">4.测试</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#san-dai-ma-bu-shu"><span class="nav-number">1.3.3.</span> <span class="nav-text">三、代码部署</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#si-dai-ma-shi-li"><span class="nav-number">1.3.4.</span> <span class="nav-text">四、代码示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#esp8266-arduino"><span class="nav-number">1.4.</span> <span class="nav-text">esp8266 & arduino</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#yi-jie-xian"><span class="nav-number">1.4.1.</span> <span class="nav-text">一、接线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#er-cheng-xu"><span class="nav-number">1.4.2.</span> <span class="nav-text">二、程序：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#san-yuan-li-jie-xi"><span class="nav-number">1.4.3.</span> <span class="nav-text">三、原理解析：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#si-cheng-xu-shao-xie"><span class="nav-number">1.4.4.</span> <span class="nav-text">四、程序烧写</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shou-ji-wei-xin-ke-hu-duan"><span class="nav-number">1.5.</span> <span class="nav-text">手机微信客户端：</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#yi-ji-chu-zhi-shi"><span class="nav-number">1.5.1.</span> <span class="nav-text">一、基础知识</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#er-gong-zhong-hao-she-zhi"><span class="nav-number">1.5.2.</span> <span class="nav-text">二、公众号设置</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#jian-cha-bing-diao-shi"><span class="nav-number">1.6.</span> <span class="nav-text">检查并调试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#yi-jian-cha"><span class="nav-number">1.6.1.</span> <span class="nav-text">一、检查</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#er-diao-shi"><span class="nav-number">1.6.2.</span> <span class="nav-text">二、调试</span></a></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
