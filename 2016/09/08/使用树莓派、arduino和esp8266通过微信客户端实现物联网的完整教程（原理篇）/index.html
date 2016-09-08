@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion">
+<html class="theme-next pisces use-motion">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="树莓派,arduino,esp8266,物联网,微信控制,原理篇," />
 
 
 
@@ -88,14 +88,14 @@
 
 <meta name="description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）导言此博文为远程控制的原理说明篇。在看它的实践篇之前，应该要明白以下原理再动手做，这样将做到事半功倍的效果。此文用了比较通俗的语言去诠释其原理，若在看此文时有不懂的地方要及时找出答案。==欢迎转载，但恳请保留原作者信息。==">
 <meta property="og:type" content="article">
-<meta property="og:title" content="顽石的家">
+<meta property="og:title" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）">
 <meta property="og:url" content="http://yoursite.com/2016/09/08/使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）/index.html">
 <meta property="og:site_name" content="顽石的家">
 <meta property="og:description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）导言此博文为远程控制的原理说明篇。在看它的实践篇之前，应该要明白以下原理再动手做，这样将做到事半功倍的效果。此文用了比较通俗的语言去诠释其原理，若在看此文时有不懂的地方要及时找出答案。==欢迎转载，但恳请保留原作者信息。==">
 <meta property="og:image" content="http://od5ckzkb4.bkt.clouddn.com/14725449079304.jpg">
-<meta property="og:updated_time" content="2016-09-08T02:05:28.000Z">
+<meta property="og:updated_time" content="2016-09-08T02:36:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="顽石的家">
+<meta name="twitter:title" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）">
 <meta name="twitter:description" content="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）导言此博文为远程控制的原理说明篇。在看它的实践篇之前，应该要明白以下原理再动手做，这样将做到事半功倍的效果。此文用了比较通俗的语言去诠释其原理，若在看此文时有不懂的地方要及时找出答案。==欢迎转载，但恳请保留原作者信息。==">
 <meta name="twitter:image" content="http://od5ckzkb4.bkt.clouddn.com/14725449079304.jpg">
 
@@ -104,7 +104,7 @@
 <script type="text/javascript" id="hexo.configuration">
   var NexT = window.NexT || {};
   var CONFIG = {
-    scheme: 'Muse',
+    scheme: 'Pisces',
     sidebar: {"position":"left","display":"post"},
     fancybox: true,
     motion: true,
@@ -120,7 +120,7 @@
 
   <link rel="canonical" href="http://yoursite.com/2016/09/08/使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）/"/>
 
-  <title>  | 顽石的家 </title>
+  <title> 使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇） | 顽石的家 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -189,6 +189,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
           </a>
         </li>
       
@@ -273,7 +283,7 @@
             
             
               
-                
+                使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）
               
             
           </h1>
@@ -285,11 +295,30 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-09-08T00:53:15+08:00" content="2016-09-08">
+            <time itemprop="dateCreated" datetime="2016-09-08T10:34:29+08:00" content="2016-09-08">
               2016-09-08
             </time>
           </span>
 
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/教程/" itemprop="url" rel="index">
+                    <span itemprop="name">教程</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
           
 
           
@@ -372,13 +401,29 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/树莓派/" rel="tag">#树莓派</a>
+          
+            <a href="/tags/arduino/" rel="tag">#arduino</a>
+          
+            <a href="/tags/esp8266/" rel="tag">#esp8266</a>
+          
+            <a href="/tags/物联网/" rel="tag">#物联网</a>
+          
+            <a href="/tags/微信控制/" rel="tag">#微信控制</a>
+          
+            <a href="/tags/原理篇/" rel="tag">#原理篇</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/09/07/arduino_lesson/" rel="next" title="web">
-                <i class="fa fa-chevron-left"></i> web
+              <a href="/2016/09/07/arduino_lesson/" rel="next" title="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）">
+                <i class="fa fa-chevron-left"></i> 使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（实践篇、含源码）
               </a>
             
           </div>
@@ -428,12 +473,15 @@
           </div>
           
 
+  <p>热评文章</p>
+  <div class="ds-top-threads" data-range="weekly" data-num-items="4"></div>
+
 
           
   <div class="comments" id="comments">
     
       <div class="ds-thread" data-thread-key="2016/09/08/使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）/"
-           data-title="" data-url="http://yoursite.com/2016/09/08/使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）/">
+           data-title="使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）" data-url="http://yoursite.com/2016/09/08/使用树莓派、arduino和esp8266通过微信客户端实现物联网的完整教程（原理篇）/">
       </div>
     
   </div>
@@ -470,7 +518,7 @@
       <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/uploads/city-750.jpg"
+               src="/images/me.jpg"
                alt="Mr hong" />
           <p class="site-author-name" itemprop="name">Mr hong</p>
           <p class="site-description motion-element" itemprop="description">在浮躁的时代里，勿忘自己的初心，坚信自己的抉择！</p>
@@ -485,17 +533,17 @@
 
           
             <div class="site-state-item site-state-categories">
-              
+              <a href="/categories">
                 <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
-              
+              </a>
             </div>
           
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-count">9</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -566,7 +614,7 @@
 <div class="theme-info">
   主题 -
   <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Muse
+    NexT.Pisces
   </a>
 </div>
 
@@ -638,6 +686,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
