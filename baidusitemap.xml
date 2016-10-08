@@ -4,7 +4,31 @@
 
     
   <url>
-    <loc>http://blogofwanshi.com/2016/09/07/arduino_lesson/</loc>
+    <loc>http://yoursite.com/2016/09/07/web_crawler/</loc>
+    <lastmod>2016-10-08T15:51:20.000Z</lastmod>
+    <data>
+        <display>
+        <title>网络爬虫应用教程</title>
+        <pubTime>2016-09-07T13:57:29.000Z</pubTime>
+        
+        <tag>爬虫</tag>
+         
+        <tag>python</tag>
+         
+        <tag>scrapy</tag>
+         
+         
+           
+             
+              <breadCrumb title="教程" url="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/09/07/arduino_lesson/</loc>
     <lastmod>2016-09-08T02:36:32.000Z</lastmod>
     <data>
         <display>
@@ -26,7 +50,7 @@
          
            
              
-              <breadCrumb title="教程" url="http://blogofwanshi.com/categories/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="教程" url="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -34,7 +58,7 @@
 
     
   <url>
-    <loc>http://blogofwanshi.com/2016/09/08/%E4%BD%BF%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E3%80%81arduino%E5%92%8Cesp8266%E9%80%9A%E8%BF%87%E5%BE%AE%E4%BF%A1%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B%EF%BC%88%E5%8E%9F%E7%90%86%E7%AF%87%EF%BC%89/</loc>
+    <loc>http://yoursite.com/2016/09/08/%E4%BD%BF%E7%94%A8%E6%A0%91%E8%8E%93%E6%B4%BE%E3%80%81arduino%E5%92%8Cesp8266%E9%80%9A%E8%BF%87%E5%BE%AE%E4%BF%A1%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%9E%E7%8E%B0%E7%89%A9%E8%81%94%E7%BD%91%E7%9A%84%E5%AE%8C%E6%95%B4%E6%95%99%E7%A8%8B%EF%BC%88%E5%8E%9F%E7%90%86%E7%AF%87%EF%BC%89/</loc>
     <lastmod>2016-09-08T02:36:27.000Z</lastmod>
     <data>
         <display>
@@ -56,7 +80,7 @@
          
            
              
-              <breadCrumb title="教程" url="http://blogofwanshi.com/categories/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="教程" url="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
           
         </display>
     </data>
@@ -67,7 +91,7 @@
     
     
   <url>
-    <loc>http://blogofwanshi.com/2016/08/26/Mweb/</loc>
+    <loc>http://yoursite.com/2016/08/26/Mweb/</loc>
     <lastmod>2016-08-29T17:02:54.000Z</lastmod>
     <data>
         <display>
@@ -81,26 +105,11 @@
          
            
              
-              <breadCrumb title="教程" url="http://blogofwanshi.com/categories/%E6%95%99%E7%A8%8B/"/>
+              <breadCrumb title="教程" url="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/"/>
           
              
-              <breadCrumb title="[object Object]" url="http://blogofwanshi.com/categories/%E6%95%99%E7%A8%8B/object-Object/"/>
+              <breadCrumb title="[object Object]" url="http://yoursite.com/categories/%E6%95%99%E7%A8%8B/object-Object/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://blogofwanshi.com/2016/08/26/hello-world/</loc>
-    <lastmod>2016-08-29T17:01:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-08-26T13:44:06.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
